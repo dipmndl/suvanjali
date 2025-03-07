@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-8">
+            <h2>{{ category_title }}</h2>
+            <p>{{ category_description }}</p>
+            <p><strong>Rent:</strong> ₹{{ rent }}</p>
+        </div>
+        <div class="col-md-4">
+            <!-- Place for image/ media if needed -->
+            <img src="{{ url_for('static', filename='img/sample.jpg') }}" alt="Category Image" class="img-fluid">
+        </div>
+    </div>
+{% endblock %}
